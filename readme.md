@@ -1,7 +1,5 @@
 # Αναφορά
 
-### Λεβαντής Χρήστος, 321-2020110
-
 Στην σελίδα έχουν ξανασχεδιαστεί απο την αρχή το **Home**, **About** (about us, copywrite statement, sponsors), **Guestbook and stats** (guest page, guestbook archive), **Webcam** και τα **Links** (hotels, music and dance, restaraunts and bars, Samos sites, shops and products, transport and rentals και travel links).
 
 ![Desktop εμφάνιση](/mockup/screenshots_readme/Screenshot%202023-10-27%20180249.png)
