@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+  animation: none;
+}
+
+.WEBCAM-CONTAINER {
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  background: rgba(198, 198, 198, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-image {
+  max-width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  display: block;
+  justify-content: center;
+}
+
+#timer {
+  font-size: 2rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}

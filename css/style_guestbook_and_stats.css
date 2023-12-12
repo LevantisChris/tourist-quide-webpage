@@ -1,0 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
+.visitor-text, .master-text {
+  color: #000000;
+  font-style: oblique;
+  font-weight:lighter;
+  font-size: 20px;
+}
+
+.master-text {
+    font-size: 15px;
+    font-weight:bold;
+}

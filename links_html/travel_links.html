@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/mockup/css/style.css">
+    <link rel="stylesheet" href="/mockup/css/style_links.css">
+    <title>Travel Links</title>
+
+    <style>
+        .GREY-CONTAINER {
+            margin: 20px;
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 15px;
+            padding: 10px;
+            background: rgba(198, 198, 198, 0.5);
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .description-info {
+            font-size: 25px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .map-style {
+            border-radius: 15px;
+            padding: 10px;
+            background: rgba(198, 198, 198, 0.5);
+            margin-left: auto;
+            margin-right: auto;
+            width: 59%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .text-decoration-none {
+            text-decoration: none;
+        }
+
+        .text-body {
+            color: #333;
+            /* Assuming #333 is the body text color */
+        }
+
+        a.text-body:hover {
+            color: #555;
+            /* Darken the link on hover */
+            text-decoration: underline;
+        }
+
+        a.text-decoration-none {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            /* Smooth transitions for shadow and transform */
+            display: inline-block;
+            /* Required for applying some transformations */
+            padding: 4px 8px;
+            /* Optional padding to give the link some space */
+            border-radius: 10px;
+            /* Optional rounded corners */
+        }
+
+        a.text-decoration-none:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Shadow effect on hover */
+            transform: translateY(-2px);
+            /* Small lift effect on hover */
+        }
+
+        #ferry-img,
+        #air-agent-img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        @media(max-width: 415px) {
+            .title-info-ttl {
+                font-size: 35px;
+            }   
+            .title-info-descr {
+                font-size: 25px;
+            }
+            #table-descr {
+                font-size: 20px
+            }
+            .list-group-item {
+                font-size: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <!-- <a class="navbar-brand fs-4" style="font-family: URW Chancery L, cursive;" href="#">SamosTour</a> -->
+            <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="200" height="80">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: URW Chancery L, cursive;">SamosTour NavBar</h5> -->
+                    <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="150" height="60">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- sidebar body -->
+                <div class="offcanvas-body flex-lg-row">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="/mockup/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/About_html/aboutUs.html">About Us</a>
+                                <a class="dropdown-item" href="/mockup/About_html/copyright_statement.html">Copywrite
+                                    statement</a>
+                                <a class="dropdown-item" href="/mockup/About_html/sponsors.html">Sponsors</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Guestbook and stats
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/guest_pg.html">Guest
+                                    page</a>
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/gb_arch.html">Guestbook
+                                    archive</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/mockup/webcams_html/webcams_main_page.html">Webcam</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Links
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/links_html/music_and_dance.html">Music &
+                                    Dance</a>
+                                <a class="dropdown-item" href="/mockup/links_html/hotels.html">Hotels</a>
+                                <a class="dropdown-item" href="/mockup/links_html/restaurants_and_bars.html">Restaurants
+                                    & Bars</a>
+                                <a class="dropdown-item" href="/mockup/links_html/samos_sites.html">Samos sites</a>
+                                <a class="dropdown-item" href="/mockup/links_html/shops_and_products.html">Shops &
+                                    Products</a>
+                                <a class="dropdown-item" href="/mockup/links_html/travel_links.html">Travel links</a>
+                                <a class="dropdown-item" href="/mockup/links_html/transport_and_rentals.html">Transport
+                                    & Rentals</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Tourist Info</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Places and tours</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">All year reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row title-row-1 mt-2 display-2 text-center">
+        <div class="title-info-ttl">
+            <p>Travel Links for Samos</p>
+        </div>
+    </div>
+
+    <div class="row title-row-1 mt-2 display-6 text-center">
+        <div class="title-info-descr">
+            <p>You can go to Samos by</p>
+        </div>
+    </div>
+
+    <div class="row title-row-1 mt-2 display-6 text-center">
+        <div class="row">
+            <div class="col">
+                <div class="title-info">
+                    <p>
+                        <b>
+                            <a href="#airport" class="text-decoration-none text-body"
+                                style="font-style: italic; font-weight: bold;">Airport</a>
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="title-info">
+                    <p>
+                        <b>
+                            <a href="#ferry" class="text-decoration-none text-body"
+                                style="font-style: italic; font-weight: bold;">Ferry</a>
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Airport -->
+
+    <div class="GREY-CONTAINER">
+        <div class="row title-row-1 mt-5 display-3 text-center">
+            <div class="title-info">
+                <p id="airport">Airport</p>
+            </div>
+        </div>
+
+        <div class="row icon-row-1 text-center" style="margin-bottom: 20px;">
+            <div class="info-icon">
+                <i class="fa-solid fa-plane-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="row title-row-1 mt-2 display-6 text-center">
+            <div class="title-info">
+                <p>Airport "Samios Aristarchos"</p>
+            </div>
+        </div>
+
+        <div id="samos-map" class="col-lg m_links-col-1 map-style">
+            <!-- Start of the Location -->
+            <div class="map d-flex justify-content-center align-items-center"
+                style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="container-samos-map">
+                    <div id="location-div">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2891524977717!2d26.911793275879443!3d37.68940777200697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc3d8e00eb1d0d%3A0x5180be1f0f0d68d6!2zzprPgc6xz4TOuc66z4zPgiDOkc61z4HOv867zrnOvM6tzr3Osc-CIM6jzqzOvM6_z4UgwqvOkc-Bzq_Pg8-EzrHPgc-Hzr_PgiDOvyDOo86szrzOuc6_z4LCuw!5e0!3m2!1sel!2sgr!4v1698232898095!5m2!1sel!2sgr"
+                            width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row info-row-1 d-flex justify-content-center align-items-center">
+            <div class="description-info w-75 p-3 text-center">
+                <p class="display-6" style="margin-top: 50px;">
+                    Airlines
+                </p>
+
+                <p id="table-descr">
+                    <b>The Airlines that "Samos Aristarchos" airport cooperate</b>
+                </p>
+                <div class="scrollable-list" style="max-height: 300px; overflow-y: auto;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>A</b>tlantic Airlines</li>
+                        <li class="list-group-item"><b>A</b>ustrian Airlines</li>
+                        <li class="list-group-item"><b>B</b>russels Airlines</li>
+                        <li class="list-group-item"><b>C</b>ondor</li>
+                        <li class="list-group-item"><b>C</b>orendon Dutch Airlines</li>
+                        <li class="list-group-item"><b>E</b>delweiss Air</li>
+                        <li class="list-group-item"><b>E</b>nter Air</li>
+                        <li class="list-group-item"><b>E</b>urowings</li>
+                        <li class="list-group-item"><b>J</b>ettime A/S</li>
+                        <li class="list-group-item"><b>L</b>ot Polish Airlines</li>
+                        <li class="list-group-item"><b>N</b>orwegian Air Shuttle</li>
+                        <li class="list-group-item"><b>O</b>lympic Air</li>
+                        <li class="list-group-item"><b>S</b>ky Express</li>
+                        <li class="list-group-item"><b>S</b>martwings</li>
+                        <li class="list-group-item"><b>T</b>rade Air</li>
+                    </ul>
+                </div>
+                <p style="font-size: 15px; margin-top: 10px;"> For more info <a class="nav-link"
+                        href="https://www.smi-airport.gr/en/flights--more/flights--destinations#fra_glossary/letter=a">click here</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row title-row-1 mt-2 display-2 text-center">
+            <div class="title-info">
+                <p>Famous Airport agents for Samos</p>
+            </div>
+        </div>
+
+        <!-- Containers table, each container/row will have two columns one for the text and the other for the image -->
+
+        <div class="adver-container-colour-full">
+            <div class="row">
+                <a class="nav-link" href="https://www.skyexpress.gr/en/flights-to-samos">
+                    <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                        Sky Express
+                    </div>
+
+                    <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                        <div class="image">
+                            <img id="air-agent-img"
+                                src="https://www.aheadrm.com/wp-content/uploads/2017/03/sky-express-logo.png"
+                                class="map-image text-center" style="border-radius: 15px;">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="adver-container-colour-full">
+            <div class="row">
+                <a class="nav-link" href="https://www.olympicair.com/en/flights-to-samos">
+                    <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                        Olympic
+                    </div>
+
+                    <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                        <div class="image">
+                            <img id="air-agent-img"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX4AAACECAMAAACgerAFAAABsFBMVEX///8bRXQAAAASseJ9kaoIPW/16gC+ydbcCisYQ3MAruEAOW0QQHEAO27DzdgZRnZugJygsMP3+fu1wtHQ2OLw8/YANmuVprzbAB9JaI3cACdacJH///gAM2rp7fLc4ul4jafbABsnT3w5XYals8Te9Pv8+sv58nb+/u/48GNfX1/R0dE2u+bg5uyJnLQsUn7+9PZNv+f+/OP27TH9/Nz79qT8+Lew4/TU8fnr+v41NTVPT0/e3t5vzOxbW1uB0u6z4/WZ2/HiPlXvl6PqeYhzc3OgoKDlZXKOjo763OHF6/f38Fn796r583/37kb69I/9+9GNzXTd5SeRzIczt8i72F2Cx5Rrw678+sMSeJkNLTgiPEKJig0HR1tqZwvf1ggcHADh2jy2trYeHBwQnMcJHSWYrbQvLy/zs7vlVWnVlZ1OlbvJLDqYV3BTqMS7oaQ0EQ6oTWLqhZHMGStWGh3MO07SVWvJf4zeAAqFbYTjLEWwCSaIX2L3ydCnGS5nBhUAWXHzq7bMwDrkRV3CsgiRhzHjWRDmbyDz1Az12WvwwQDywk7phhoQAADgPiXAN07HhwwjAAARNElEQVR4nO1cCXfbSHKmTMIkCIAEcfAUDxHgjCzzkCzLktaSKdojeSjP2JPNtTNJNonHycjZ2STj3c16tNHueJ1j7/zldFcDBPqgLUqW+J7V33t+ooFGo/rr6qrq6kYnEhISEhISEhISEhISEhISEhISEhISEhISEhIXj8Vbn32AcHt5cd6SXEEsbzxavw5Y//DOvIW5arh143oc6xtyBFwiPlm/zuDD5XnLdGWw+CFLPsYH8xbrimDxU8L34ye3b926dftO0Bnrt+ct2NXAE8L2nYm5/4z0x2PJ/yXgA+D6U8rW3wFf8GheIl0hLD/CTN9grpI++cFcJLpS2AD2uTjzB2B+ZPhz0XiMeRZY+RtS/S8Bn4HhF9y4BdH/pctzxbAxNcTH6r9+2eJcNeAYc12YYYCOuXXZ8lwtLN4QhD0EH8ip74UD6BdbePAKMvd5oZD0zxUw6XoD/dL4XCgg2SlOLnyC6ZfzrovFxtTcJuTdLlucqwZILmzAT6tzuLe5udex4H/L6zLpdgmAZPNywtra7SaTyWw2m+zuHlpBGvqTeUv33gNo/nRrN5lNhsgm1/ZuY+Vfl7Oui8YtzPOfxciHDuh+PzJKEhcJFOH8OeEc2R0wQMnsX/zl9anJCIl3iw//iqj+7t7W9vZ2Z2/Y/evvy9WWS8MusP/5F/s7rmVZ7s7Tv/nb69LvXhY2gf2/u4bwvbsrK3fxjx/+/fXrT+Yt2JVAB8w9sB/DP/yjtDyXgiFS/uzu0y9p+lfcect1RYAtT3c7YR2sTHrge/s7cGt7bzTc3d0dbh5acxbyvcUetvwj/MvaefrxvXv7+wc3G3Bna9iFWTCKR5Nro+25SvneAtueboe/vj2Mz8Sy2e6mHAHvHhaKOrO7/PXDbjYkPuyFNUEnSZwP29jAjLjLm4HqP+si298lPZDtbs1BwPcbQP8ee5VMBZ59/k/XwAd3NmEsZEVGSuI8ENK/1QX2v0BB0M2g2BD0f0064HcLkfGx1mAq8M84Bt0JLx4C/7yZkjgPMNWs6x0RRT/A9EezL+A/Kc3/uwUEnpRN2QbT00ncQ+x/Fbs+wmNieMnive8AL7uJf62Ojz56+Pz5w3/50TM8EbuJlf/jeNFuku0pifPCwvR3EfmvXmeWyuVytby09PWP/7WT2Mf0P40X3UyKoiSJcwFSbqMH5aVqNRMAdcHzf8Ps36NmuuCm3259Gr2mk8Nweo0Lk3rOwAsjBG4vXTJrFYRaqu87M7eYuNQfLxHekfpDL1R/8e+s8sO6THZNVIdlF0qlUgpgVrxBHtD2KmY/HUuduoVWKyVACfeyJbrZyuHn7BR9p2UnEs2UqKpWE8kiqAdJ13cSzb74/TEU7B6ImjOFaJG7bqk2gZdXFB2gGHrbM0vObPyPYI71Tbm8lLn/8MWL58eoCxD/P/nptbtMSTxQ1oSpn3SlbhiGgqGrqrpAoOq6oQ1SzYh/v1LXSLEY6qWgD2v1InOrWIPXOaZWnDxm1Fu4S5t9vc5VVUxhYVA99B0km1ZEzPX67brGPkMXLOb7oMHNVL4Y0BpBq4WttytGcC1sLDRYVXXDqNiz0G+tgf6bP3swXkX/XV09+o+vy3gE/PSmoKPE9CPF1hfEUJVBP3rG9T1KYAw9HLGoA3SmGj1H7qRrC2rYxFRQXbPV5l7mWaSeBfYlikmeSbWVKYJO5K0QeZpmm22TFhHbbLNvmFSga5HCnQI/fwb8d0dbIPvWaO3ZN8gWVTMnIvrFdTT6+WniLKiaGTOJDZ8RXDdj9dgVuslKeLMxUIPKClFpn2VZ1cnQtzyuj3PBM05KnSppQLIZ9K9To0uq3sSSIi3imjn5MZiF/Qcvf/Ys2F3VXVtb60K27Vuk/9XjVbrkcLrtH1A6pTJKrNTii2cmfVNNx6tKK1ST1QHhs1kJ2G/7scI+x4HSx9fdFntDj0lQY0cYO+TUnLh+vRRcb5gK+wg2Q0GzlZiCvBXj+9Xq188m6eXw7zeI/6UHdNEpyelEIkU3QGunTNrEGKWosEtrv+pRVVmeqMmOR7pX1+J9ZbFEogIVF66zCl6MKHE1mrhBodRipE1N6ajAqPRqBv1So942S75tFyp1RVW9WWzPR4jnly82u9n46kp3ND6uIvUfx0tu4TubfA2WSUujYlufoyRX85FIfpEqzeqKTVOh5lFltkZqU+iW5Xgzriq5RNMzuMv5SPlLNP1gz9N5qrRHrI/DSBoYwh4z1A2vNBGrmRrUZ1H+RKYKVmZ7b41eWnyFuuUX/7m/srKyf3ATxBlOSfr0Ncr7GzD+Gc2M1N+ibY86YHSlwZhtw06UgvGiVOiyKYEXVfrNCh8F6Kmofvq26mG/5FLSqnniq/p0Nypk5Lkm9Vq97VPBfrM/S+x/gpxsmRiZzt5oNByONgnDq7/81R8nGx/uHuwktiETxwc+rIEMHFeLFrIWFs9RiragpNj6SszIrqVI96pKjW5Yj/OvGG3eKSJEwXjaoJ4KnAVNf9sV1B+6jz7lnXRvxjifxosl1sYQ3LxL7zz56mB3kh2iSaBDHrUdiMPQXwn7rcWM3BxbYXPAxBsBM0aLUasCZ+FJef5S1PmcPSehkk/phE7ckU1HAQYxKi791jwn/0x4WM5UX/OXD66x+A58Ap9xY0yp0hI2c0K/RfeW7nEVCm0KZp8tJzAyU2BE4VKTYR86JkfHolpfVL/iCtqrcFLNhNXn1Uz5I+7yfrjjZ2V/f/8u3gD0OfjkQ66kywiZD5S/wdAc0u/T3Co+V2PCERCo8tGcUz8l+YF9J+jT71drhVLJVBmVgNSCw0xPWvA847qoSGx2rCLt5+n/ONjqRnb8WDsHX5CZgWCxizEVEPhhpBm3FUQNjEfmHC+AjydVvcSVEg8SEYh9BzTYIaPiPAl9pU7mtiW6/nxaVEHxfFlFIf3E8tzFOYcOwuGIpCWS363wjteho/iJJ6VNPI5fSHGmVzjHi8EFlHqbT6P0Bm+ZvMYIjUW9XEzKQs+TAdlgHS9pO0t/bza+GQD9D+lrO7DbcB/UeK3b7Yb7rb67du2Aq4ClP9BSdlCEw59WWVUThg0u6x4HAv/GWDGRx50wFz3FDyy6Et3wgncx8w/NF8qmzZRe44FmXdX7dHIBDP8+6ezJXCyL2b/2FTfWmOgspJ9JLOiBlA3WVAllst6YlgjAxJftCS1sSkfVI4qcPHuPgmFUSmELGSvZDudtTERnUgahN+tgeLUUy60tLi8vL+5g9r8kb+tkw2zQsAMOgVd/ehISmFlfozulFRT2aZXSC5Y7QVQlk03Ua4Lt1g4dcOktO8yIDkzGZ1amOt4FDy+TRIitTjAyGBP3kaOmwqreJ49YbiNXMtu8i3ozxnjaBcZ/8c6TG48fP3706x9GNI/IPHht1EHDDkIhzvrTOQQVogafDnsmKUQuSYObH6AVVVmgqa2LBniKMuJq3gmGodLOMWNHiyhxB+wcxbKmbF0tMUmTyEoO6Dua1/dtu9Sq5OuGkp95Dva6msksnYSHRxL8138H37lvH24eHoZ5BlB/dg0gYVXo0TgoFWrUxFLVW2ETHYMzDJNxH3HMZN2E+VvGt+DhBcNQrzQbTEJbiZS/QDteQ+j4Axno+mNJ8dyAMY1klUlnip0Sr/DS1sMN5gjbdcGHXTfF1sdh1EGhV4AUZGHCotNjRT0WmjMBtyIa0DSRatHBBg8RWunxSZCIU8ae56enJmkTs1CMex+fTVBHxWZ3xKvPcWr/f7gzhG9wp2lYOA+xz9fgDKayijTDjNrYFCZpAPGMNG2giTljQQ8QiG1QJKqZLmfg1Chqemu6KQKTVvMo75Pz2FEcFGufYRP+SQYvrv/vb5DKP/r0ycZvf/cbwv8j7pN2HBKtCGpo1lShPqhKu5aOScSvjkRURBw3aGojpxcngElKY+W0TAP7mGZ+qt9uTbXnXIuYCI0ZgM1U22DbgjRtZscLeAC7HF7+/hPQ91fl8h9IBzxi9R/Tf09Ug5Wu6QY2OWH0sYDXnHUvRTfQm7rMXYyF5nadWvzWRMrfqtNPQx/7sKZcqFOxZGydpVHUIhha/Q2GukTLwFspp+SphhFucVA0Tfda/tmmYLvfotg/8yII/nGe/yfkFG32fMmp9KMOcEqmlyeeFAmVH3hmwWGGopWejpjkTfqOMKOYEz1NXtdzaERCNEtx+G9iy3m7DJZjl0wT4tVWv2CzjT01NrPJb18uHYX/PcKuYLwh+KzdujfF+AToOWm/1O/3UyU/13xvd1i9Y8B3vWa0qQG7gpcn5BjJR9ShDjtfsbs+Jc4N2E4e2zqIF3nRPGyRP0T46R/5jW8S5wTsW44bLrwAczxO3OaOkH+d+eWvvjyjUSG7PnPpKfa2SW4L7GcjnQvgiL70duE2CjdJ9VbCzdk2X9AK6uClJ28mIUID1cCUaKQLyJz6dnr23ZunAmR1qH2zRzgN8SI4Qzt2/WSpWi3//GxvQYEcbPsUTqESeGEJ3dRFoUhKgQcX0D/R5j3bwA86iRKUqruJvlpv8b3Yh1oWdH5xx9bQDTK3cCqqYdJd51dUzUBBUl1pV8yZ9q6dErC/n9q+sIqsT6Z8RE4yjA6SHN+vCja+nQ5WLZjF8CuGgBwErbqA3iZMqVUdL7vqOh+o43V5VXHSJMVXd31N8Xg9tYN9pwo/hyBLt3jWZ7cVjc5fJmxYiVG9ft/M1+sXof9442CXfimkIY5PblPnWcHkmF0ZOC364RwlnnqPIUXSNYL2Bcsjdi4kiYYFs9N8IZglKX5eb/NRIpqJqbAdVDS+IEGnDholXTVajNkiE2i1ku65rn++ZcUpGAr2bb7GOzyPj/ApY+GpMmNITYi2RJwCjrGgVKCZ0YaHOMgqgCYwTFaFPJVo6EL6g5XmSZKtrRb5WtyaolRa015vBxQvqEaNvRusbKm6Wjvnsso0iOgf38dcV/Hkl8y8xg8y+Er5iH/+FOh5ulrppcg4Fo1g2NkT7m2ikIbUs96Cnbc6P/lkN6UsKCZPcMvQKy6s3IreESwq6gsa7zP8YsD/gi7Mep8fIvoTY0gDZf70h9/9djwen3x0DDv+qw9EFbwdSO9V04fdwpNdQHEEKt4SPBouLeGckjLgGcgFW3Emxm3Ah1Y2qiOVJosAoqXZ4B2KKQiYfE8N0rdTvNZ5AV82cldP7i+F3xllqkuYfPTn1dne4GvYdRZJI0W7ktKEYcEdB5QbuU3smUWb93yyMKObQZozzxtoZ6CrulEnrxdlhG1tyrDJmblGo5kmo+MNawPnAR/5AMYPM5NPvaAbqq/PZnnwWryOF7U8wqSg/YFZFjwLqWd10McaqIhGP9FcvdIj9Gt8ZIOGljp5vcB7hC8RDMtKXfFqrRQ4bfUMqfzTYCsr3r+TePX1UvC1HQr3l44frArKnAJupV6s4S/RGgpONNb59jfqcEOw38rSijjo7rteEf0R9Q+6gUqggBR/tKQV+S1zllmv1xro9U4e5zsFWU6rUocbnPJbfspDEX8dvkwanCmXfApws94A290ffft/xyjYLGfuPzw6I/nIORYKwQ5gu4DBK1kTrvuCOa1rA9yEA3/5AlYabji4cvyDt+wuqjr+et44uf4UueCmYxf6qX4hfdZ85lsBH6sL1B87haR9gjA+M/cSbwU5Q4DbvLkJJyjJb9gvHKDm7FFJ5AATwacsEu8Y5PyY7l782gjYF37HJfGOQU5PSu52ws1Qh7vk8CR5eNWl4BA20eLNbIeHh5vDtaQ8OuxSsUXOLYSPG4OjC6XuXyI6u/HvSnEfDGXQc5lA9j76pjo55L8ikrhQ4LMcYAbc3R3JE9vmgu1Op7MtDwuWkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQmAf+H9bz1TmGQ0zEAAAAAElFTkSuQmCC"
+                                class="map-image text-center" style="border-radius: 15px;">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ferry -->
+
+    <div class="GREY-CONTAINER">
+        <div class="row title-row-1 mt-5 display-3 text-center">
+            <div class="title-info">
+                <p id="ferry">Ferry</p>
+            </div>
+        </div>
+
+        <div class="row icon-row-1 text-center" style="margin-bottom: 20px;">
+            <div class="info-icon">
+                <i class="fa-solid fa-ferry"></i>
+            </div>
+        </div>
+
+        <div class="row title-row-1 mt-2 display-6 text-center">
+            <div class="title-info">
+                <p>Two main ports in Karlobasi and in Vathy</p>
+            </div>
+        </div>
+
+        <div id="samos-map" class="col-lg m_links-col-1 map-style">
+            <div class="row">
+
+                <div class="col">
+                    <!-- Start of the Location -->
+                    <div class="map d-flex justify-content-center align-items-center"
+                        style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="container-samos-map">
+                            <div id="location-div">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.7950497004244!2d26.6851471!3d37.794842599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc420adc41b8f1%3A0xb3d7100ed98dc1ba!2sKarlovassi!5e0!3m2!1sel!2sgr!4v1698252202064!5m2!1sel!2sgr"
+                                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Start of the Location -->
+                    <div class="map d-flex justify-content-center align-items-center"
+                        style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="container-samos-map">
+                            <div id="location-div">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6308.907500871067!2d26.97638820586619!3d37.75595748091058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc179a5f5a4271%3A0x1d5d767adc787c88!2sSamos%20Vathy%20International%20Port!5e0!3m2!1sel!2sgr!4v1698252426649!5m2!1sel!2sgr"
+                                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row title-row-1 mt-5 display-2 text-center">
+            <div class="title-info">
+                <p>Famous Ferry agents for Samos</p>
+            </div>
+        </div>
+
+        <!-- Containers table, each container/row will have two columns one for the text and the other for the image -->
+
+        <div class="adver-container-colour-full">
+            <div class="row">
+                <a class="nav-link" href="https://www.bluestarferries.com/en-gb">
+                    <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                        Blue Start Ferries
+                    </div>
+
+                    <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                        <div class="image">
+                            <img id="ferry-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/Blue_star_ferries_logo.svg/1280px-Blue_star_ferries_logo.svg.png"
+                                class="map-image text-center" style="border-radius: 15px;">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer container-fluid d-flex justify-content-center align-items-center">
+        <footer class="py-5 text-center w-50">
+            <div class="footer row" style="margin-bottom: 0;">
+                <div class="mb-3">
+                    <form>
+                        <h5>Submit your question</h5>
+                        <p>We will try to contact you as soon as possible</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter1" class="visually-hidden">Name</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter2" class="visually-hidden">Email address</label>
+                            <input id="newsletter2" type="text" class="form-control" placeholder="Email address">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter3" class="visually-hidden">Your Question</label>
+                            <textarea id="newsletter3" class="form-control" rows="5" placeholder="Your Question"
+                                style="resize: none;"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center border-top">
+                <p style="margin-top: 0.5rem;">© 2022 Levantis, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

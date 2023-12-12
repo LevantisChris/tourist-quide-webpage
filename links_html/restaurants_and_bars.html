@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/mockup/css/style.css">
+    <link rel="stylesheet" href="/mockup/css/style_links.css">
+    <title>Restaurants & bars</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <!-- <a class="navbar-brand fs-4" style="font-family: URW Chancery L, cursive;" href="#">SamosTour</a> -->
+            <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="200" height="80">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: URW Chancery L, cursive;">SamosTour NavBar</h5> -->
+                    <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="150" height="60">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- sidebar body -->
+                <div class="offcanvas-body flex-lg-row">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="/mockup/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/About_html/aboutUs.html">About Us</a>
+                                <a class="dropdown-item" href="/mockup/About_html/copyright_statement.html">Copywrite
+                                    statement</a>
+                                <a class="dropdown-item" href="/mockup/About_html/sponsors.html">Sponsors</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Guestbook and stats
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/guest_pg.html">Guest
+                                    page</a>
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/gb_arch.html">Guestbook
+                                    archive</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/mockup/webcams_html/webcams_main_page.html">Webcam</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Links
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/links_html/music_and_dance.html">Music &
+                                    Dance</a>
+                                <a class="dropdown-item" href="/mockup/links_html/hotels.html">Hotels</a>
+                                <a class="dropdown-item" href="/mockup/links_html/restaurants_and_bars.html">Restaurants
+                                    & Bars</a>
+                                <a class="dropdown-item" href="/mockup/links_html/samos_sites.html">Samos sites</a>
+                                <a class="dropdown-item" href="/mockup/links_html/shops_and_products.html">Shops &
+                                    Products</a>
+                                <a class="dropdown-item" href="/mockup/links_html/travel_links.html">Travel links</a>
+                                <a class="dropdown-item" href="/mockup/links_html/transport_and_rentals.html">Transport
+                                    & Rentals</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Tourist Info</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Places and tours</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">All year reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row title-row-1 mt-2 display-2 text-center">
+        <div class="title-info">
+            <p>Restaurants & bars</p>
+        </div>
+    </div>
+
+    <div class="row icon-row-1 text-center" style="margin-bottom: 20px;">
+        <div class="info-icon">
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+    </div>
+
+    <div class="adver-container-colour-full">
+        <div class="row">
+
+            <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                Tsamadou Beach
+            </div>
+
+            <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                <div class="image">
+                    <img src="http://www.samostour.dk/images/stories/links/TsamadouBeach.gif"
+                        class="map-image text-center" alt="Webcam East" style="border-radius: 15px;">
+                </div>
+            </div>
+
+            <iframe style="margin-top: 10px; border-radius: 5%;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25225.42540496255!2d26.85213571326437!3d37.78586395685157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc15cbf2e3864b%3A0x54c41418a9a0fb88!2sTsamadou%20Beach!5e0!3m2!1sel!2sgr!4v1698086968179!5m2!1sel!2sgr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </div>
+
+    <div class="adver-container-grey">
+        <div class="row">
+
+            <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                Profile
+            </div>
+
+            <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                <div class="image">
+                    <img src="http://www.samostour.dk/images/stories/links/Profile.jpg" class="map-image text-center"
+                        alt="Webcam East" style="border-radius: 15px;">
+                </div>
+            </div>
+
+            <iframe style="margin-top: 10px; border-radius: 5%;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.47623808906!2d26.88387308891559!3d37.778877539698655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc15d6506f321b%3A0xc6df5ecfeb461edd!2sProfile%20Cafe!5e0!3m2!1sel!2sgr!4v1698087325053!5m2!1sel!2sgr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </div>
+
+    <div class="adver-container-colour-full">
+        <div class="row">
+
+            <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                Restaurant Meltemi
+            </div>
+
+            <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                <div class="image">
+                    <img src="http://www.samostour.dk/images/stories/links/MeltemiLogo2.jpg"
+                        class="map-image text-center" alt="Webcam East" style="border-radius: 15px;">
+                </div>
+            </div>
+
+            <iframe style="margin-top: 10px; border-radius: 5%;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4717105035807!2d26.886623275883814!3d37.77898367198437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc15d641599fdf%3A0x48583f5b26e9049f!2sMeltemi%20Restaurant!5e0!3m2!1sel!2sgr!4v1698087200224!5m2!1sel!2sgr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </div>
+
+    <div class="adver-container-grey">
+        <div class="row">
+
+            <div id="text-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                La Casa
+            </div>
+
+            <div id="image-col" class="col-lg d-flex justify-content-center align-items-center text-center">
+                <div class="image">
+                    <img src="http://www.samostour.dk/images/stories/links/Lacasa.jpg"
+                        class="map-image text-center" alt="Webcam East" style="border-radius: 15px;">
+                </div>
+            </div>
+
+            <iframe style="margin-top: 10px; border-radius: 5%;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4755456231774!2d26.89081977588369!3d37.77889377198442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc17088e24ea17%3A0xc23d9de01a5a6bcb!2sLa%20Casa%20Restaurant!5e0!3m2!1sel!2sgr!4v1698087646163!5m2!1sel!2sgr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer container-fluid d-flex justify-content-center align-items-center">
+        <footer class="py-5 text-center w-50">
+            <div class="footer row" style="margin-bottom: 0;">
+                <div class="mb-3">
+                    <form>
+                        <h5>Submit your question</h5>
+                        <p>We will try to contact you as soon as possible</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter1" class="visually-hidden">Name</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter2" class="visually-hidden">Email address</label>
+                            <input id="newsletter2" type="text" class="form-control" placeholder="Email address">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter3" class="visually-hidden">Your Question</label>
+                            <textarea id="newsletter3" class="form-control" rows="5" placeholder="Your Question"
+                                style="resize: none;"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center border-top">
+                <p style="margin-top: 0.5rem;">© 2022 Levantis, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

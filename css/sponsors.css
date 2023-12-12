@@ -1,0 +1,22 @@
+body {
+    overflow-x: hidden;
+}
+
+#row-id-1 {
+    margin-top: 20px;
+}
+
+#row-id-2 {
+    margin-top: 50px;
+}
+
+.sponsor-icon {
+    margin-top: 0px;
+    font-size: 70px;
+}
+
+@media (max-width: 1630px) {
+    #text-sponsor {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,177 @@
+body {
+    overflow-x: hidden;
+}
+
+#MOBILE-div-intro-msg {
+  display: none !important;
+}
+
+.person-img {
+  border-radius: 50%;
+}
+
+.person-col {
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 700px;
+  font-size: 20px;
+}
+
+#person-1 {
+  background: linear-gradient(135deg, #142565, #6a91d5);
+}
+
+#person-2 {
+  background: linear-gradient(135deg, #115341, #079030);
+}
+
+.people-check-icon {
+  font-size: 5rem;
+}
+
+.social-icons {
+  font-size: 3rem;
+}
+
+#instagram-row {
+  margin-top: 240px;
+}
+
+#linkedIn-row {
+  margin-bottom: 240px;
+}
+
+.GOAL-INFO {
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 10px;
+  background: rgba(198, 198, 198, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.goal-row-1 {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Style for the images */
+.memorable-image {
+  max-width: 80%; /* Adjust this to make images smaller or larger */
+  margin: 0 auto; /* Center the image */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+  border-radius: 5px; /* Slight rounding of corners */
+  display: block; /* To enable margin auto for centering */
+}
+
+/* Hover effect */
+.memorable-image:hover {
+  transform: scale(1.05); /* Slight scale up */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Intensify shadow */
+}
+
+.MEMORABLE-MOMENTS {
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 10px;
+  background: rgba(198, 198, 198, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.TABLE-WAITING {
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 10px;
+  background: rgba(198, 198, 198, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-info {
+  margin-bottom: 20px;
+}
+
+.description-info {
+  font-size: 25px;
+  margin-top: 50px;
+  font-style: italic;
+}
+
+@media (max-width: 1630px) {
+  #MOBILE-div-intro-msg {
+    margin-top: 50px;
+    display: block !important;
+  }
+
+  #div-intro-msg {
+    display: none !important;
+  }
+
+  #div-social {
+    display: none !important;
+  }
+
+  .person-col {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 75%;
+    font-size: 15px;
+  }
+
+  .people-check-icon {
+    font-size: 3rem;
+  }
+
+  .person-description-col {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
+  .person-img {
+    width: 100px;
+  }
+
+  .goal-row-1 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .memorable-image {
+    max-width: 80%; /* Adjust this to make images smaller or larger */
+    margin: 0 auto; /* Center the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Slight rounding of corners */
+    display: block; /* To enable margin auto for centering */
+    margin-bottom: 10px;
+  }
+
+  .description-info {
+    font-size: 20px;
+    margin-top: 50px;
+    font-style: italic;
+  }
+}

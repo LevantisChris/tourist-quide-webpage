@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/mockup/css/style.css">
+    <link rel="stylesheet" href="/mockup/css/style_about.css">
+    <link rel="stylesheet" href="/mockup/css/style_copyright_statement.css">
+    <title>Copyright Statement</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <!-- <a class="navbar-brand fs-4" style="font-family: URW Chancery L, cursive;" href="#">SamosTour</a> -->
+            <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="200" height="80">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: URW Chancery L, cursive;">SamosTour NavBar</h5> -->
+                    <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour" width="150" height="60">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- sidebar body -->
+                <div class="offcanvas-body flex-lg-row">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/mockup/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/About_html/aboutUs.html">About Us</a>
+                                <a class="dropdown-item" href="/mockup/About_html/copyright_statement.html">Copywrite
+                                    statement</a>
+                                <a class="dropdown-item" href="/mockup/About_html/sponsors.html">Sponsors</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Guestbook and stats
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/guest_pg.html">Guest
+                                    page</a>
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/gb_arch.html">Guestbook
+                                    archive</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/mockup/webcams_html/webcams_main_page.html">Webcam</a>
+                        </li>
+
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Links
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/links_html/music_and_dance.html">Music &
+                                    Dance</a>
+                                <a class="dropdown-item" href="/mockup/links_html/hotels.html">Hotels</a>
+                                <a class="dropdown-item" href="/mockup/links_html/restaurants_and_bars.html">Restaurants
+                                    & Bars</a>
+                                <a class="dropdown-item" href="/mockup/links_html/samos_sites.html">Samos sites</a>
+                                <a class="dropdown-item" href="/mockup/links_html/shops_and_products.html">Shops &
+                                    Products</a>
+                                <a class="dropdown-item" href="/mockup/links_html/travel_links.html">Travel links</a>
+                                <a class="dropdown-item" href="/mockup/links_html/transport_and_rentals.html">Transport
+                                    & Rentals</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Tourist Info</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Places and tours</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">All year reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="div-goal-msg" class="text-center d-flex align-items-center justify-content-center">
+        <div class="row title-row-1 display-2" style="margin-top: 50px;">
+            <div class="title-info">
+                <p id="title">Copyright Statement </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row icon-row-1 text-center" style="margin-top: -5px;">
+        <div class="people-check-icon">
+            <i class="fa-regular fa-copyright"></i>
+        </div>
+    </div>
+
+    <div class="row info-row-1 d-flex justify-content-center align-items-center">
+        <div class="description-info w-75 p-3 text-center">
+
+            <p class="text-body-emphasis" style="font-size:larger;">
+                All material within this website is protected by copyright.
+                © Samostour.dk
+            </p>
+
+            <hr>
+
+            <div class="GREY-CONTAINER">
+                <p style="margin-top: 50px;">
+                    Use of the site.
+                </p>
+
+                <p>
+                    <b>Personal use.</b>
+
+                    Users may view, print and store information and material on this site for personal, non-commercial
+                    purposes only, provided that all copyright and other proprietary notices are retained. Unauthorised
+                    use,
+                    publishing and reproduction in part or in whole without permission are expressly prohibited.
+                </p>
+
+                <p style="margin-top: 50px;">
+                    Use of the site.
+                </p>
+
+                <p>
+                    <b>Commercial use.</b>
+
+                    The contents of this site may not be used for commercial purposes, without written permission of
+                    Samostour.dk
+                </p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1- The entire URL address that appears when viewing the page you wish to
+                        use.</li>
+                    <li class="list-group-item">2- Full information about the intended use of the material.</li>
+                    <li class="list-group-item">3- Your full name, organization, and contact information.</li>
+                </ul>
+                <p> price for permission is depending on the use.
+                    If permission is granted, the wording "provided with permission from Samostour.dk -
+                    http://www.samostour.dk", and the date must be noted.
+                </p>
+            </div>
+
+            <p style="margin-top: 50px;">
+                Linking to Samostour.dk
+            </p>
+
+            <p>
+                Permission is <b>not</b> required to create a link to www.samostour.dk or any pages contained therein
+                provided that www.samostour.dk is clearly mentioned as source.
+            </p>
+
+            <p style="margin-top: 50px;">
+                “Direct link” or “hotlinks”
+            </p>
+
+            <p>
+                to pictures and any other content on Samostour.dk is strictly forbidden and immediate action will be
+                taken to stop this Copyright Infringement, this might include removing the offending website from the
+                internet by the Internet Service Provider.
+            </p>
+
+            <p style="margin-top: 50px;">
+                Links to Other Sites.
+            </p>
+
+            <p>
+                Links to third party websites on this site are provided solely as a service. Samostour.dk has not
+                reviewed these sites in their entirety, nor does it control these sites. Samostour.dk is not responsible
+                for any of these sites or their content.
+            </p>
+
+            <p style="margin-top: 50px;">
+                Trademarks & logos.
+            </p>
+
+            <p>
+                All trademarks and logos used as links on this site are the property of the respective owners and/or
+                operators of those sites.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer container-fluid d-flex justify-content-center align-items-center">
+        <footer class="py-5 text-center w-50">
+            <div class="footer row" style="margin-bottom: 0;">
+                <div class="mb-3">
+                    <form>
+                        <h5>Submit your question</h5>
+                        <p>We will try to contact you as soon as possible</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter1" class="visually-hidden">Name</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter2" class="visually-hidden">Email address</label>
+                            <input id="newsletter2" type="text" class="form-control" placeholder="Email address">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter3" class="visually-hidden">Your Question</label>
+                            <textarea id="newsletter3" class="form-control" rows="5" placeholder="Your Question"
+                                style="resize: none;"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center border-top">
+                <p style="margin-top: 0.5rem;">© 2022 Levantis, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/mockup/css/style.css">
+  <title>Home</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <!-- <a class="navbar-brand fs-4" style="font-family: URW Chancery L, cursive;" href="#">SamosTour</a> -->
+      <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="200" height="80">
+      <!-- Toggle Button -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- side bar -->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+
+        <!-- Sidebar Header -->
+        <div class="offcanvas-header text-dark border-bottom">
+          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: URW Chancery L, cursive;">SamosTour NavBar</h5> -->
+          <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="150" height="60">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- sidebar body -->
+        <div class="offcanvas-body flex-lg-row">
+          <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="/mockup/index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/mockup/About_html/aboutUs.html">About Us</a>
+                <a class="dropdown-item" href="/mockup/About_html/copyright_statement.html">Copywrite statement</a>
+                <a class="dropdown-item" href="/mockup/About_html/sponsors.html">Sponsors</a>
+              </div>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Guestbook and stats
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/guest_pg.html">Guest page</a>
+                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/gb_arch.html">Guestbook archive</a>
+              </div>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/mockup/webcams_html/webcams_main_page.html">Webcam</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/mockup/links_html/music_and_dance.html">Music &
+                  Dance</a>
+                <a class="dropdown-item" href="/mockup/links_html/hotels.html">Hotels</a>
+                <a class="dropdown-item" href="/mockup/links_html/restaurants_and_bars.html">Restaurants & Bars</a>
+                <a class="dropdown-item" href="/mockup/links_html/samos_sites.html">Samos sites</a>
+                <a class="dropdown-item" href="/mockup/links_html/shops_and_products.html">Shops & Products</a>
+                <a class="dropdown-item" href="/mockup/links_html/travel_links.html">Travel links</a>
+                <a class="dropdown-item" href="/mockup/links_html/transport_and_rentals.html">Transport & Rentals</a>
+              </div>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Tourist Info</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Places and tours</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">All year reports</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="intro-msg container-fluid">
+    <div class="row intro-row-1">
+
+      <div class="col-lg ntro-col-1">
+        <!-- Carousel (small) Column -->
+        <div class="carousel">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="resources/samos_img/1_better.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/samos_img/2_better.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/samos_img/3_better.jpg" class="d-block w-100" alt="No resources">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg intro-col-1">
+
+        <div class="row intro-row-2">
+
+          <div class="col-lg intro-col-2">
+            <!-- Intro Message -->
+            <div class="intro-msg container-fluid">
+              <div class="intro-msg-overlay">
+                <p class="intro-msg-text text-center text-end text-white text-body-emphasis"
+                  style="font-weight: lighter; font-style: italic;">Welcome to the Web Portal of
+                <h1 class="text-center" style="font-family: 'georgia'; font-weight: bolder;">Samos Island</h1>
+                </p>
+                <p class="intro-msg-text text-center text-end text-white"
+                  style="font-weight:normal; font-style: italic;">`This private website is our
+                  tribute to the gem of the Aegean sea.</p>
+                <p class="intro-msg-text text-center text-end text-white"
+                  style="font-weight: normal; font-style: italic;">We hope our site may be a source
+                  of inspiration and contributing factor</p>
+                <p class="intro-msg-text text-center text-end text-white"
+                  style="font-weight: normal; font-style: italic;">for choosing this beautiful and
+                  diverse island as a holiday destination.`</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row intro-row-2">
+
+          <div class="col-lg intro-col-2">
+            <div class="container-weather">
+              <!-- Weather -->
+              <div class="card-weather">
+                <div class="error">
+                  <p>City not found</p>
+                </div>
+                <div class="weather">
+                  <img src="/mockup/resources/weather/rain.png" class="weather-icon">
+                  <h1 class="temp">30°C</h1>
+                  <h2 class="city">Greece</h2>
+                  <div class="details">
+                    <div class="col-weather">
+                      <img src="/mockup/resources/weather/humidity.png">
+                      <div>
+                        <p class="humidity">50%</p>
+                        <p class="description-weather">Humidity</p>
+                      </div>
+                    </div>
+                    <div class="col-weather">
+                      <img src="/mockup/resources/weather/wind.png">
+                      <div>
+                        <p class="wind">15 km/h</p>
+                        <p class="description-weather">Wind speed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Latest News Fast View -->
+          <div class="col-lg intro-col-2">
+
+            <div class="row intro-row-3 header-big">
+              <div class="news-header">
+                <i class="fa-regular fa-newspaper"></i>
+                <p class="text1">Latest Updates</p>
+              </div>
+            </div>
+
+            <div class="row intro-row-3">
+              <p class="text2">Sponsors and Banner advertisers</p>
+            </div>
+
+            <div class="row intro-row-3">
+              <p class="text2">Oxi Day </p>
+            </div>
+
+            <div class="row intro-row-3">
+              <p class="text2">Roundtrip on Samos. </p>
+            </div>
+
+            <div class="row intro-row-3">
+              <p class="text2">Quick tour to the top of Samos </p>
+            </div>
+
+            <div class="row intro-row-3">
+              <p class="text2">Restaurant Mythos, Kokkari Greek evening </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bar with info about beaches and other -->
+
+    <div class="info-bar">
+      <div class="row">
+        <div class="col">
+          <div class="villages">
+            <p class="action">Visit</p>
+            <p class="number">56</p>
+            <p class="type">traditional villages</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="beaches">
+            <p class="action">Explore</p>
+            <p class="number">35</p>
+            <p class="type">discovered beaches</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="hiking-paths">
+            <p class="action">Walk</p>
+            <p class="number">28</p>
+            <p class="type">mountainous hiking-paths</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="informations">
+      <div class="row icon-row-1 text-center">
+        <div class="info-icon">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+      </div>
+
+      <div class="row title-row-1 mt-2 display-2 text-center">
+        <div class="title-info">
+          <p>The Island Of Samos</p>
+        </div>
+      </div>
+
+      <div class="row info-row-1 d-flex justify-content-center align-items-center">
+        <div class="description-info w-75 p-3 text-center">
+          <p>
+
+            Samos the island of legend and beauty.
+
+            The birthplace of great men.
+
+            Pythagoras, the great mathematician and philosopher. Founder of music theory and modern mathematical
+            thought.
+
+            Aristarchus, the astronomer. The first person to propose the heliocentric theory, about 2300 years ago.
+
+            The mythical birthplace of goddess Hera. Herodotus considered her temple in Heraion as ‘the greatest and
+            most imposing temple in Greece’. UNESCO included the temple and the broader archaeological site of
+            Pythagoreion among the World’s Cultural Heritage Monuments.
+
+            The island where the philosopher Epicurus, the author of the famous fables Aesop, the philosopher and
+            general Melissus spent most of their lives.
+
+            Samos town is the capital of Samos. The island comprises two municipalities: Municipality of Eastern Samos
+            and Municipality of Western Samos and four municipal units Vathi, Karlovasi, Pythagoreio and Marathokampos
+            and a number of picturesque coastal settlements, beautiful mountainous and verdant midland villages. The
+            population of the island is 32.997 inhabitants (2011 census).
+
+            Samos, the largest island in the region, is mountainous with a coastline of about 140 km and area of 476
+            km2. Two mountains dominate the landscape: the rough and rocky Kerkis reaching 1443 meters in height, and
+            the verdant and fertile Ampelos (or Karvounis) 1160 meters in height. There are few plains. The largest one
+            is that of Chora, in the south of the island. There aren’t any rivers, just torrents, small streams and
+            plenty of springs.
+
+            Samos is a place with lush vegetation. The virgin natural landscape is made of colors and light. And every
+            step taken by the visitor is a revelation. Whether one finds himself in the majestic mountains, or in caves,
+            gorges and ravines, the environment of Samos reminds of Greek mainland in miniature. Over 1400 species of
+            rare plants, many of which are endemic, and dozens of bird species, will accompany the visitor’s steps.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="important-links w-50 p-3">
+
+        <div class="row b_links-row-1">
+
+          <!-- Hotels -->
+          <div class="col-lg b_links-col-1">
+            <a href="/mockup/links_html/hotels.html" class="text-decoration-none text-body">
+              <div class="card box box-hotels bg-image text-center hover-shadow">
+                <div class="box-icon my-3">
+                  <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Hotels</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Restaurants and bars -->
+          <div class="col-lg b_links-col-1">
+            <a href="/mockup/links_html/restaurants_and_bars.html" class="text-decoration-none text-body">
+              <div class="card box box-restaurants text-center hover-shadow">
+                <div class="box-icon my-3">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Restaurants and bars</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row b_links-row-2">
+          <!-- Shops & products -->
+          <div class="col-lg b_links-col-2">
+            <a href="/mockup/links_html/shops_and_products.html" class="text-decoration-none text-body">
+              <div class="card box box-shops text-center hover-shadow">
+                <div class="box-icon my-3">
+                  <i class="fa-solid fa-shop"></i>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Shops & products</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Transport & Rentals -->
+          <div class="col-lg b_links-col-2">
+            <a href="/mockup/links_html/transport_and_rentals.html" class="text-decoration-none text-body">
+              <div class="card box box-transports text-center hover-shadow">
+                <div class="four">
+                  <div class="box-icon my-3">
+                    <i class="fa-solid fa-taxi"></i>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Transport & Rentals</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Map and "how to get there info" -->
+    <div class="row m_links-row-1" style="margin-left: 10px; margin-right: 10px; margin-top: 50px;">
+
+      <div id="samos-map" class="col-lg m_links-col-1 intro-row-1">
+        <!-- Start of the Location -->
+        <div class="map d-flex justify-content-center align-items-center"
+          style="margin-top: 20px; margin-bottom: 20px;">
+          <div class="container-samos-map">
+            <div id="location-div">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201969.97797549606!2d26.653105052853196!3d37.72482026145078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc3f9fd1d780f5%3A0x4ba91c89f2bbdc7f!2zzqPOrM68zr_Pgg!5e0!3m2!1sel!2sgr!4v1697911504347!5m2!1sel!2sgr"
+                width="820" height="450" style="border-radius:2%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg m_links-col-1 " style="margin-top: 50px;">
+        <p class="d-flex justify-content-center align-items-center mt-2 display-4 text-center">How you can go to Samos
+        </p>
+
+        <div>
+          <div class="box-icon airplane-icon my-3 d-flex justify-content-center align-items-center mt-5 text-center">
+            <i class="fa-solid fa-plane"></i>
+          </div>
+          <p class="d-flex justify-content-center align-items-center">
+            <a href="https://www.smi-airport.gr/el" class="text-decoration-none text-body">By Airplane</a>
+          </p>
+          <div>
+
+
+            <div class="box-icon airplane-icon my-3 d-flex justify-content-center align-items-center mt-5 text-center">
+              <i class="fa-solid fa-ferry"></i>
+            </div>
+            <p class="d-flex justify-content-center align-items-center">
+              <a href="https://www.smi-airport.gr/el" class="text-decoration-none text-body">By Ferry</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gallery-row-1">
+
+      <div class="col-lg gallery-col-1">
+        <div class="row icon-row-1 text-center" style="margin-top: 50px;">
+          <div class="gallery-icon">
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <div class="row title-row-1 mt-2 display-2 text-center">
+          <div class="title-info">
+            <p>Photo Gallery</p>
+          </div>
+        </div>
+
+        <!-- Carousel (big) Column -->
+        <div class="carousel-big">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9"
+                aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="resources/big_slideshow/1.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/2.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/3.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/4.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/4.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/5.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/6.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/7.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/8.jpg" class="d-block w-100" alt="No resources">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/big_slideshow/9.jpg" class="d-block w-100" alt="No resources">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg gallery-col-2">
+        <div class="video-youtube">
+
+          <div class="row icon-row-1 text-center" style="margin-top: 50px;">
+            <div class="gallery-icon">
+              <i class="fa-solid fa-video"></i>
+            </div>
+          </div>
+
+          <div class="row title-row-1 mt-2 display-2 text-center">
+            <div class="title-info">
+              <p>Reccomended Video</p>
+            </div>
+          </div>
+
+          <div class="row info-row-1 d-flex justify-content-center align-items-center">
+            <div class="description-info w-75 text-center">
+              <p>
+
+                We visited all Samos villages in one day
+
+              </p>
+            </div>
+
+            <iframe class="youtude-video"
+              src="https://www.youtube.com/embed/Zp4EQO7hCCg?si=EN32pGQIUdL3uB4X&amp;start=3" title="Must See!!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <div class="container-footer container-fluid d-flex justify-content-center align-items-center">
+    <footer class="py-5 text-center w-50">
+      <div class="footer row" style="margin-bottom: 0;">
+        <div class="mb-3">
+          <form>
+            <h5>Submit your question</h5>
+            <p>We will try to contact you as soon as possible</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+              <label for="newsletter1" class="visually-hidden">Name</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+              <label for="newsletter2" class="visually-hidden">Email address</label>
+              <input id="newsletter2" type="text" class="form-control" placeholder="Email address">
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+              <label for="newsletter3" class="visually-hidden">Your Question</label>
+              <textarea id="newsletter3" class="form-control" rows="5" placeholder="Your Question"
+                style="resize: none;"></textarea>
+            </div>
+            <button class="btn btn-primary" type="button">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center align-items-center border-top">
+        <p style="margin-top: 0.5rem;">© 2022 Levantis, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6402c02530.js" crossorigin="anonymous"></script>
+  <script>
+
+    // Source Code: https://github.com/LevantisChris/Weather-ToDo-App-AllInOne-JS
+    document.addEventListener("DOMContentLoaded", function () {
+      // Call the function immediately after the page is loaded
+      checkedWeather("Samos");
+    });
+
+    /// This script is for the Weather app customization ...
+    const apiKey = "7f5eae58fa65109c168e66f54f1f5a68";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    const weatherIcon = document.querySelector(".weather-icon");
+
+    async function checkedWeather(city) {
+      const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+
+      if (response.status == 404) {
+        document.querySelector(".error").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
+      } else {
+
+        var data = await response.json();
+
+        document.querySelector(".city").innerHTML = data.name;
+        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+        document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+        document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+
+        // update image (weather/main/...)
+        if (data.weather[0].main == "Clouds") {
+          weatherIcon.src = "resources/weather/clouds.png";
+        } else if (data.weather[0].main == "Clear") {
+          weatherIcon.src = "resources/weather/clear.png";
+        } else if (data.weather[0].main == "Rain") {
+          weatherIcon.src = "resources/weather/rain.png";
+        } else if (data.weather[0].main == "Drizzle") {
+          weatherIcon.src = "resources/weather/drizzle.png";
+        } else if (data.weather[0].main == "Mist") {
+          weatherIcon.src = "resources/weather/mist.png";
+        }
+
+        document.querySelector(".weather").style.display = "block";
+        document.querySelector(".error").style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

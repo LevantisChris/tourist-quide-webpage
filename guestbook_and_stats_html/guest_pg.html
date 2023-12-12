@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/mockup/css/style.css">
+    <link rel="stylesheet" href="/mockup/css/style_guestbook_and_stats.css">
+    <title>Guestbook Page</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <!-- <a class="navbar-brand fs-4" style="font-family: URW Chancery L, cursive;" href="#">SamosTour</a> -->
+            <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="200" height="80">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: URW Chancery L, cursive;">SamosTour NavBar</h5> -->
+                    <img src="/mockup/resources/logogreen-BodiniTR.gif" alt="SamosTour Logo" width="150" height="60">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- sidebar body -->
+                <div class="offcanvas-body flex-lg-row">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="/mockup/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/About_html/aboutUs.html">About Us</a>
+                                <a class="dropdown-item" href="/mockup/About_html/copyright_statement.html">Copywrite
+                                    statement</a>
+                                <a class="dropdown-item" href="/mockup/About_html/sponsors.html">Sponsors</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Guestbook and stats
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/guest_pg.html">Guest
+                                    page</a>
+                                <a class="dropdown-item" href="/mockup/guestbook_and_stats_html/gb_arch.html">Guestbook
+                                    archive</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/mockup/webcams_html/webcams_main_page.html">Webcam</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Links
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/mockup/links_html/music_and_dance.html">Music &
+                                    Dance</a>
+                                <a class="dropdown-item" href="/mockup/links_html/hotels.html">Hotels</a>
+                                <a class="dropdown-item" href="/mockup/links_html/restaurants_and_bars.html">Restaurants
+                                    & Bars</a>
+                                <a class="dropdown-item" href="/mockup/links_html/samos_sites.html">Samos sites</a>
+                                <a class="dropdown-item" href="/mockup/links_html/shops_and_products.html">Shops &
+                                    Products</a>
+                                <a class="dropdown-item" href="/mockup/links_html/travel_links.html">Travel links</a>
+                                <a class="dropdown-item" href="/mockup/links_html/transport_and_rentals.html">Transport
+                                    & Rentals</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Tourist Info</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Places and tours</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">All year reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row title-row-1 mt-2 display-2 text-center">
+        <div class="title-info">
+            <p>Guest Page</p>
+        </div>
+    </div>
+
+    <div class="row icon-row-1 text-center" style="margin-bottom: 20px;">
+        <div class="info-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+    <div class="row title-row-1 mt-2 display-6 text-center">
+        <div class="title-info">
+            <p>This page is open for your Samos related <b>pictures & text</b></p>
+            <p>Send pictures & text to <b>mail@samostour.dk</b></p>
+            <p style="font-size: small;">(Text may be shortened by webmaster)</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mb-4">
+                    <div class="card-header bg-light">
+                        <strong>Carel Schut</strong> <span class="text-muted">name@example.com</span> |
+                        <small>07-09-2012 14:30</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Hello Jan and Torben,
+                            <br>
+                            At first a very nice website, I look everyday on the webcam to see Kokkari..
+                            here I send a picture I made in last may. I took the walk from Potami to Micro Seitani and
+                            Megalo Seitani. This is a fantastic walk. I was there all alone on that small and beautiful
+                            beach. One day I hope to go to Drakei from Potami by foot.
+                            The 28st of september we go again for only one week. I love Samos and specially Kokkari
+                        </p>
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/Carel.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <p>
+                            Best Regards Carel Schut, Terschelling (Also a beautifull island in the north of Holland)
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mb-4">
+                    <div class="card-header bg-light">
+                        <strong>Olaf Büscher</strong> <span class="text-muted">name@example.com</span> |
+                        <small>15-10-2012 14:30</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Hi, Torben and Jan,my name is Olaf Büscher,
+                            <br>
+                            I’m living in South-Germany (near Stuttgart) and
+                            I’m a hardcore-fan of Samos.
+                            Me and my family have been a lot of times in Kokkari, that’s why I know Giannis Goulielmos
+                            very well (and even “Smokey”, it was one of a lot of bikes, I rented from Giannis and my
+                            daughter Anke has learned motorbiking with Smokeys help).
+                            Andreas Kotzos (Tavern at the end of the world) gave me your address. What’s the reason I
+                            contact you now? In August I’ll finish my job, then I’ll stay often in Kokkari for more than
+                            a few weeks. I’ m just waiting for a house or rooms to rent for longer time – Giannis is
+                            looking for. And when I stay in Samos, maybe I would like to help you – if you are still
+                            interested in help.
+                        </p>
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/Olaf1.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/Olaf2.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <p>
+                            Best wishes from Germany
+                            <br>
+                            Olaf
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mb-4">
+                    <div class="card-header bg-light">
+                        <strong>Janet de Jong</strong> <span class="text-muted">name@example.com</span> |
+                        <small>05-07-2012 14:30</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            I took this picture last friday morning (29 june) as I left Samos. A great last view on
+                            Kokkari. It is not completely sharp, but there was only short time and only one chance. Best
+                            regards,
+                            Janet
+                        </p>
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/Janet-2W.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mb-4">
+                    <div class="card-header bg-light">
+                        <strong>Bert Hazeleger</strong> <span class="text-muted">name@example.com</span> |
+                        <small>25-03-2012 14:30</small>
+                    </div>
+                    <div class="card-body">
+                        <p>Here please receive this photo's for your site if you wish. You may use them any time.
+                            Regards
+                            from Bert Hazeleger. Good luck and thanks for sharing your samostour feelings! </p>
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/2/BH-1.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/2/BH-2.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/2/BH-3.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/2/BH-4.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                        <img src="http://www.samostour.dk/images/stories/Guest-page/2/BH-5.jpg"
+                            alt="Carel Schut trip to Samos Island" class="img-fluid mb-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- Footer -->
+    <div class="container-footer container-fluid d-flex justify-content-center align-items-center">
+        <footer class="py-5 text-center w-50">
+            <div class="footer row" style="margin-bottom: 0;">
+                <div class="mb-3">
+                    <form>
+                        <h5>Submit your question</h5>
+                        <p>We will try to contact you as soon as possible</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter1" class="visually-hidden">Name</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter2" class="visually-hidden">Email address</label>
+                            <input id="newsletter2" type="text" class="form-control" placeholder="Email address">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="margin-bottom: 0.5rem;">
+                            <label for="newsletter3" class="visually-hidden">Your Question</label>
+                            <textarea id="newsletter3" class="form-control" rows="5" placeholder="Your Question"
+                                style="resize: none;"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center border-top">
+                <p style="margin-top: 0.5rem;">© 2022 Levantis, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
